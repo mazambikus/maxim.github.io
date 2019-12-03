@@ -18,7 +18,7 @@ body {
 
 }
 .col-right{
-    margin: 0%;
+    margin: 5%;
     background-color: yellow;
     padding:14px;
 
@@ -29,6 +29,15 @@ body {
   list-style: none;
 
 
+}
+
+.call{
+ background-color: blue;
+ color: white;
+padding: 20px;
+border-radius: 30px;
+animation: pulse 0.5s 3;
+animation-delay: 1s;
 }
 h2{
    background: #D9FFAD;
@@ -46,14 +55,38 @@ h3{
     padding: 0px;
 
 }
+
+/* CSS animation */
+
+.avatar{
+
+    border-radius: 50%;
+    border: 10px solid white;
+    
+    animation:rot 1s 3;
+    
+    }
+
+
+    @keyframes pulse {
+      from{  background-color: blue; }
+      to{ background-color: blueviolet; }
+
+    }
+
+    @keyframes rot {
+      from{ transform: translateX(-1000px) rotate(0deg);}
+      to{ transform: translateX(0px) rotate(360deg);}
+
+    }
 </style>
 <link rel="icon" href="images/icon.ico" />
 </head>
 <body>
     <main id="content">
-        <div class="col-left">  
+        <div class="avatar" class="col-left">  
             <img width=250px src="images/avatar.png" alt="Maxim.U">
-            <h2>Maxim.Ura.</h2>
+            <h2>Maxim.U.</h2>
             <h3>Web Development</h3>
         </div>
         <div class="col-right">   <h2 class="no-border">My Projects</h2>
@@ -61,7 +94,10 @@ h3{
             <li><a href="">Menu with CSS</a></li>
             <li><a href="">Search Bar with css</a></li>
             <li><a href="">Smile in CSS</a></li>
-        </ul>               </div>
+        </ul> 
+       <p class="call" href="tel: +37369209310">Call me: 37369209310 </p>
+    
+    </div>
 
     </main>   
 
